@@ -1,0 +1,12 @@
+/etudiants/cspecq1/Téléchargements/clion-2017.3.1/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb
+TRACE on
+-- - - - -
+-- Project configured successfully
+-- Using /usr/local for installation
+-- Build type Debug
+-- Build with GCC ABI Demangle...: yes
+-- Build with execinfo.h.........: yes
+-- - - - -
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/cmake-build-debug

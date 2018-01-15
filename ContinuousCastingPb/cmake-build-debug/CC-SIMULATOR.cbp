@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="CC-SIMULATOR"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\src\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="package_source">
+				<Option working_dir="/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/cmake-build-debug/Makefile&quot;  VERBOSE=1 package_source"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="package">
+				<Option working_dir="/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/cmake-build-debug/Makefile&quot;  VERBOSE=1 package"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cc-simulator-main">
+				<Option output="/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/cmake-build-debug/src/cc-simulator-main" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/cmake-build-debug/src"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DWITH_TRACE_MODEL"/>
+					<Add directory="/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/usr/local/include/artis-star-1.0"/>
+					<Add directory="/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/src"/>
+					<Add directory="/usr/include/c++/4.9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/4.9"/>
+					<Add directory="/usr/include/c++/4.9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.9/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 cc-simulator-main"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cc-simulator-main/fast">
+				<Option output="/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/cmake-build-debug/src/cc-simulator-main" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/cmake-build-debug/src"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DWITH_TRACE_MODEL"/>
+					<Add directory="/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/usr/local/include/artis-star-1.0"/>
+					<Add directory="/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/src"/>
+					<Add directory="/usr/include/c++/4.9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/4.9"/>
+					<Add directory="/usr/include/c++/4.9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.9/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 cc-simulator-main/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/src/cluster.cpp">
+			<Option target="cc-simulator-main"/>
+		</Unit>
+		<Unit filename="/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/src/cluster.hpp">
+			<Option target="cc-simulator-main"/>
+		</Unit>
+		<Unit filename="/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/src/crane.cpp">
+			<Option target="cc-simulator-main"/>
+		</Unit>
+		<Unit filename="/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/src/crane.hpp">
+			<Option target="cc-simulator-main"/>
+		</Unit>
+		<Unit filename="/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/src/evalCC.cpp">
+			<Option target="cc-simulator-main"/>
+		</Unit>
+		<Unit filename="/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/src/evalCC.hpp">
+			<Option target="cc-simulator-main"/>
+		</Unit>
+		<Unit filename="/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/src/gantry_crane.cpp">
+			<Option target="cc-simulator-main"/>
+		</Unit>
+		<Unit filename="/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/src/gantry_crane.hpp">
+			<Option target="cc-simulator-main"/>
+		</Unit>
+		<Unit filename="/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/src/generator.cpp">
+			<Option target="cc-simulator-main"/>
+		</Unit>
+		<Unit filename="/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/src/generator.hpp">
+			<Option target="cc-simulator-main"/>
+		</Unit>
+		<Unit filename="/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/src/graph_manager.hpp">
+			<Option target="cc-simulator-main"/>
+		</Unit>
+		<Unit filename="/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/src/hillCLimberBest.cpp">
+			<Option target="cc-simulator-main"/>
+		</Unit>
+		<Unit filename="/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/src/hillCLimberBest.hpp">
+			<Option target="cc-simulator-main"/>
+		</Unit>
+		<Unit filename="/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/src/localSearch.cpp">
+			<Option target="cc-simulator-main"/>
+		</Unit>
+		<Unit filename="/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/src/localSearch.hpp">
+			<Option target="cc-simulator-main"/>
+		</Unit>
+		<Unit filename="/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/src/main.cpp">
+			<Option target="cc-simulator-main"/>
+		</Unit>
+		<Unit filename="/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/src/models.cpp">
+			<Option target="cc-simulator-main"/>
+		</Unit>
+		<Unit filename="/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/src/models.hpp">
+			<Option target="cc-simulator-main"/>
+		</Unit>
+		<Unit filename="/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/src/run_out_table.cpp">
+			<Option target="cc-simulator-main"/>
+		</Unit>
+		<Unit filename="/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/src/run_out_table.hpp">
+			<Option target="cc-simulator-main"/>
+		</Unit>
+		<Unit filename="/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/src/search.hpp">
+			<Option target="cc-simulator-main"/>
+		</Unit>
+		<Unit filename="/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/src/solution.hpp">
+			<Option target="cc-simulator-main"/>
+		</Unit>
+		<Unit filename="/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/src/stack.cpp">
+			<Option target="cc-simulator-main"/>
+		</Unit>
+		<Unit filename="/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/src/stack.hpp">
+			<Option target="cc-simulator-main"/>
+		</Unit>
+		<Unit filename="/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/src/stock.cpp">
+			<Option target="cc-simulator-main"/>
+		</Unit>
+		<Unit filename="/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/src/stock.hpp">
+			<Option target="cc-simulator-main"/>
+		</Unit>
+		<Unit filename="/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/src/utils/rand.cpp">
+			<Option target="cc-simulator-main"/>
+		</Unit>
+		<Unit filename="/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/src/utils/rand.hpp">
+			<Option target="cc-simulator-main"/>
+		</Unit>
+		<Unit filename="/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/CMakeCPack.cmake">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
