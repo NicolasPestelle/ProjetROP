@@ -2,16 +2,16 @@
 // Created by cspecq1 on 15/01/18.
 //
 
-#ifndef CC_SIMULATOR_SEARCH_HPP
-#define CC_SIMULATOR_SEARCH_HPP
+#ifndef SEARCH_HPP
+#define SEARCH_HPP
 
 #include "solution.hpp"
 
-class search : public Solution{
+class search{
 private:
     double bestSolution;
 public:
-    virtual void run(Solution s);
+    virtual void run(Solution s) = 0;
 };
 
 

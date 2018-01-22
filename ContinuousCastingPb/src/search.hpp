@@ -11,7 +11,7 @@ class search{
 private:
     double bestSolution;
 public:
-    virtual void run(Solution s) = 0;
+    virtual Solution run(Solution s) = 0;
 };
 
 

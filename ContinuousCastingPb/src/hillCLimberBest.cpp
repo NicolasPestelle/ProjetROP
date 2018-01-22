@@ -8,7 +8,7 @@ hillCLimberBest::hillCLimberBest() {
 
 }
 
-void hillCLimberBest::run(Solution s) {
+Solution hillCLimberBest::run(Solution s) {
   //  search::run(s);
 }
 

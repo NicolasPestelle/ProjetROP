@@ -110,13 +110,13 @@ int main()
     Solution s ;
 
     // solution for random selection: all stacks have the same preference 1
-    s.resize(solution_size,1);
+    //s.resize(solution_size,1);
 
     RandomSearch rs;
-    // rs.run(s);
+     rs.run(s);
 
     // evaluation of the solution
-    eval(s);
+    //eval(s);
 
 
     // print the result

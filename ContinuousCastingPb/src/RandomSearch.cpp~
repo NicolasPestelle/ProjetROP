@@ -12,5 +12,5 @@ void RandomSearch::run(Solution s) {
     Solution sBest;
     Solution sprime = s ;
 
-    std::cout<<"test : "<< sprime.fitness()<<std::endl;
+    std::cout<<"test : "<< sprime.to_string()<<std::endl;
 }

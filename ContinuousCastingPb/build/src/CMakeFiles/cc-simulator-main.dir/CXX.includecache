@@ -365,6 +365,8 @@ cassert
 /etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/src/RandomSearch.hpp
 search.hpp
 /etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/src/search.hpp
+evalCC.hpp
+-
 
 /etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/src/main.cpp
 graph_manager.hpp

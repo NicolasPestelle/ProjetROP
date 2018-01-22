@@ -10,6 +10,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/cc-simulator-main.dir/stack.cpp.o"
   "CMakeFiles/cc-simulator-main.dir/stock.cpp.o"
   "CMakeFiles/cc-simulator-main.dir/utils/rand.cpp.o"
+  "CMakeFiles/cc-simulator-main.dir/RandomSearch.cpp.o"
   "CMakeFiles/cc-simulator-main.dir/hillCLimberBest.cpp.o"
   "cc-simulator-main.pdb"
   "cc-simulator-main"

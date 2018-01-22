@@ -136,6 +136,30 @@ cc-simulator-main/fast:
 	cd /etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/build && $(MAKE) -f src/CMakeFiles/cc-simulator-main.dir/build.make src/CMakeFiles/cc-simulator-main.dir/build
 .PHONY : cc-simulator-main/fast
 
+RandomSearch.o: RandomSearch.cpp.o
+.PHONY : RandomSearch.o
+
+# target to build an object file
+RandomSearch.cpp.o:
+	cd /etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/build && $(MAKE) -f src/CMakeFiles/cc-simulator-main.dir/build.make src/CMakeFiles/cc-simulator-main.dir/RandomSearch.cpp.o
+.PHONY : RandomSearch.cpp.o
+
+RandomSearch.i: RandomSearch.cpp.i
+.PHONY : RandomSearch.i
+
+# target to preprocess a source file
+RandomSearch.cpp.i:
+	cd /etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/build && $(MAKE) -f src/CMakeFiles/cc-simulator-main.dir/build.make src/CMakeFiles/cc-simulator-main.dir/RandomSearch.cpp.i
+.PHONY : RandomSearch.cpp.i
+
+RandomSearch.s: RandomSearch.cpp.s
+.PHONY : RandomSearch.s
+
+# target to generate assembly for a file
+RandomSearch.cpp.s:
+	cd /etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/build && $(MAKE) -f src/CMakeFiles/cc-simulator-main.dir/build.make src/CMakeFiles/cc-simulator-main.dir/RandomSearch.cpp.s
+.PHONY : RandomSearch.cpp.s
+
 cluster.o: cluster.cpp.o
 .PHONY : cluster.o
 
@@ -435,6 +459,9 @@ help:
 	@echo "... package"
 	@echo "... package_source"
 	@echo "... rebuild_cache"
+	@echo "... RandomSearch.o"
+	@echo "... RandomSearch.i"
+	@echo "... RandomSearch.s"
 	@echo "... cluster.o"
 	@echo "... cluster.i"
 	@echo "... cluster.s"

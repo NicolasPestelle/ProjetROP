@@ -12,7 +12,7 @@ class hillCLimberBest : public search {
 
 public:
     hillCLimberBest();
-    Solution run(Solution s);
+    void run(Solution s);
 };
 
 

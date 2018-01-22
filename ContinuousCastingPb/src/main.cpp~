@@ -33,6 +33,7 @@
 #include <iostream>
 #include "RandomSearch.hpp"
 
+
 using namespace cc;
 using namespace artis::common;
 
@@ -103,6 +104,7 @@ int main()
 
     // evaluation function from the Continuous Casting simulator
     EvalCC eval;
+   
 
     // Declaration of one solution of the optimization problem
     Solution s ;
@@ -111,7 +113,7 @@ int main()
     s.resize(solution_size,1);
 
     RandomSearch rs;
-    rs.run(s);
+    // rs.run(s);
 
     // evaluation of the solution
     eval(s);
@@ -121,6 +123,7 @@ int main()
     std::cout << s.to_string() << std::endl;
     
     /*
+
     GlobalParameters p;
 
     // score init to 1 (random selection)

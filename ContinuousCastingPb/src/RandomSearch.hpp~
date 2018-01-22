@@ -2,8 +2,8 @@
 // Created by cspecq1 on 15/01/18.
 //
 
-#ifndef CC_SIMULATOR_LOCALSEARCH_HPP
-#define CC_SIMULATOR_LOCALSEARCH_HPP
+#ifndef RANDOMSEARCH_HPP
+#define RANDOMSEARCH_HPP
 
 #include "search.hpp"
 

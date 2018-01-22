@@ -9,7 +9,7 @@ hillCLimberBest::hillCLimberBest() {
 }
 
 void hillCLimberBest::run(Solution s) {
-    search::run(s);
+  //  search::run(s);
 }
 
 

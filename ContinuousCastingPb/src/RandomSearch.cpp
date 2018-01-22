@@ -4,13 +4,38 @@
 
 #include "RandomSearch.hpp"
 
-RandomSearch::RandomSearch(){
 
+RandomSearch::RandomSearch(){
+  nbEval = 10;
+  fitnessMax = 255;
 }
 
-void RandomSearch::run(Solution s) {
-    Solution sBest;
-    Solution sprime = s ;
+void RandomSearch::randomSolution(Solution s)
+{
+  srand(time(NULL));
+  for(unsigned i =0; i< s.size();i++){
+    int r = rand()%101;
+    s[i] = r;
+  }
+  
+}
 
-    std::cout<<"test : "<< sprime.to_string()<<std::endl;
+Solution RandomSearch::run(Solution s) {
+
+  randomSolution(s);
+  
+  EvalCC eval; 
+  Solution sBest;
+  Solution sprime = s ;
+
+  for(int i =0; i<nbEval; i++){
+   randomSolution(sprime);
+    eval(sprime);
+    if(sprime > sBest)
+      {
+	sBest = sprime;
+      }
+  }
+
+  return sBest;    
 }
