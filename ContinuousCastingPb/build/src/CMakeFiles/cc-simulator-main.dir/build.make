@@ -325,28 +325,28 @@ src/CMakeFiles/cc-simulator-main.dir/RandomSearch.cpp.o.provides: src/CMakeFiles
 
 src/CMakeFiles/cc-simulator-main.dir/RandomSearch.cpp.o.provides.build: src/CMakeFiles/cc-simulator-main.dir/RandomSearch.cpp.o
 
-src/CMakeFiles/cc-simulator-main.dir/hillCLimberBest.cpp.o: src/CMakeFiles/cc-simulator-main.dir/flags.make
-src/CMakeFiles/cc-simulator-main.dir/hillCLimberBest.cpp.o: ../src/hillCLimberBest.cpp
+src/CMakeFiles/cc-simulator-main.dir/RandomWalk.cpp.o: src/CMakeFiles/cc-simulator-main.dir/flags.make
+src/CMakeFiles/cc-simulator-main.dir/RandomWalk.cpp.o: ../src/RandomWalk.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/build/CMakeFiles $(CMAKE_PROGRESS_13)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/cc-simulator-main.dir/hillCLimberBest.cpp.o"
-	cd /etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cc-simulator-main.dir/hillCLimberBest.cpp.o -c /etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/src/hillCLimberBest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/cc-simulator-main.dir/RandomWalk.cpp.o"
+	cd /etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/cc-simulator-main.dir/RandomWalk.cpp.o -c /etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/src/RandomWalk.cpp
 
-src/CMakeFiles/cc-simulator-main.dir/hillCLimberBest.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cc-simulator-main.dir/hillCLimberBest.cpp.i"
-	cd /etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/src/hillCLimberBest.cpp > CMakeFiles/cc-simulator-main.dir/hillCLimberBest.cpp.i
+src/CMakeFiles/cc-simulator-main.dir/RandomWalk.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cc-simulator-main.dir/RandomWalk.cpp.i"
+	cd /etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/src/RandomWalk.cpp > CMakeFiles/cc-simulator-main.dir/RandomWalk.cpp.i
 
-src/CMakeFiles/cc-simulator-main.dir/hillCLimberBest.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cc-simulator-main.dir/hillCLimberBest.cpp.s"
-	cd /etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/src/hillCLimberBest.cpp -o CMakeFiles/cc-simulator-main.dir/hillCLimberBest.cpp.s
+src/CMakeFiles/cc-simulator-main.dir/RandomWalk.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cc-simulator-main.dir/RandomWalk.cpp.s"
+	cd /etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/src/RandomWalk.cpp -o CMakeFiles/cc-simulator-main.dir/RandomWalk.cpp.s
 
-src/CMakeFiles/cc-simulator-main.dir/hillCLimberBest.cpp.o.requires:
-.PHONY : src/CMakeFiles/cc-simulator-main.dir/hillCLimberBest.cpp.o.requires
+src/CMakeFiles/cc-simulator-main.dir/RandomWalk.cpp.o.requires:
+.PHONY : src/CMakeFiles/cc-simulator-main.dir/RandomWalk.cpp.o.requires
 
-src/CMakeFiles/cc-simulator-main.dir/hillCLimberBest.cpp.o.provides: src/CMakeFiles/cc-simulator-main.dir/hillCLimberBest.cpp.o.requires
-	$(MAKE) -f src/CMakeFiles/cc-simulator-main.dir/build.make src/CMakeFiles/cc-simulator-main.dir/hillCLimberBest.cpp.o.provides.build
-.PHONY : src/CMakeFiles/cc-simulator-main.dir/hillCLimberBest.cpp.o.provides
+src/CMakeFiles/cc-simulator-main.dir/RandomWalk.cpp.o.provides: src/CMakeFiles/cc-simulator-main.dir/RandomWalk.cpp.o.requires
+	$(MAKE) -f src/CMakeFiles/cc-simulator-main.dir/build.make src/CMakeFiles/cc-simulator-main.dir/RandomWalk.cpp.o.provides.build
+.PHONY : src/CMakeFiles/cc-simulator-main.dir/RandomWalk.cpp.o.provides
 
-src/CMakeFiles/cc-simulator-main.dir/hillCLimberBest.cpp.o.provides.build: src/CMakeFiles/cc-simulator-main.dir/hillCLimberBest.cpp.o
+src/CMakeFiles/cc-simulator-main.dir/RandomWalk.cpp.o.provides.build: src/CMakeFiles/cc-simulator-main.dir/RandomWalk.cpp.o
 
 # Object files for target cc-simulator-main
 cc__simulator__main_OBJECTS = \
@@ -362,7 +362,7 @@ cc__simulator__main_OBJECTS = \
 "CMakeFiles/cc-simulator-main.dir/stock.cpp.o" \
 "CMakeFiles/cc-simulator-main.dir/utils/rand.cpp.o" \
 "CMakeFiles/cc-simulator-main.dir/RandomSearch.cpp.o" \
-"CMakeFiles/cc-simulator-main.dir/hillCLimberBest.cpp.o"
+"CMakeFiles/cc-simulator-main.dir/RandomWalk.cpp.o"
 
 # External object files for target cc-simulator-main
 cc__simulator__main_EXTERNAL_OBJECTS =
@@ -379,7 +379,7 @@ src/cc-simulator-main: src/CMakeFiles/cc-simulator-main.dir/stack.cpp.o
 src/cc-simulator-main: src/CMakeFiles/cc-simulator-main.dir/stock.cpp.o
 src/cc-simulator-main: src/CMakeFiles/cc-simulator-main.dir/utils/rand.cpp.o
 src/cc-simulator-main: src/CMakeFiles/cc-simulator-main.dir/RandomSearch.cpp.o
-src/cc-simulator-main: src/CMakeFiles/cc-simulator-main.dir/hillCLimberBest.cpp.o
+src/cc-simulator-main: src/CMakeFiles/cc-simulator-main.dir/RandomWalk.cpp.o
 src/cc-simulator-main: src/CMakeFiles/cc-simulator-main.dir/build.make
 src/cc-simulator-main: src/CMakeFiles/cc-simulator-main.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable cc-simulator-main"
@@ -401,7 +401,7 @@ src/CMakeFiles/cc-simulator-main.dir/requires: src/CMakeFiles/cc-simulator-main.
 src/CMakeFiles/cc-simulator-main.dir/requires: src/CMakeFiles/cc-simulator-main.dir/stock.cpp.o.requires
 src/CMakeFiles/cc-simulator-main.dir/requires: src/CMakeFiles/cc-simulator-main.dir/utils/rand.cpp.o.requires
 src/CMakeFiles/cc-simulator-main.dir/requires: src/CMakeFiles/cc-simulator-main.dir/RandomSearch.cpp.o.requires
-src/CMakeFiles/cc-simulator-main.dir/requires: src/CMakeFiles/cc-simulator-main.dir/hillCLimberBest.cpp.o.requires
+src/CMakeFiles/cc-simulator-main.dir/requires: src/CMakeFiles/cc-simulator-main.dir/RandomWalk.cpp.o.requires
 .PHONY : src/CMakeFiles/cc-simulator-main.dir/requires
 
 src/CMakeFiles/cc-simulator-main.dir/clean:

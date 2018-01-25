@@ -1,16 +1,63 @@
-//
-// Created by cspecq1 on 15/01/18.
-//
+#include <stdio.h>
+#include <iostream>
+#include <stdlib.h>
+#include <evalCC.hpp>
+#include <RandomSearch.hpp>
 
-#include "RandomSearch.hpp"
 
-RandomSearch::RandomSearch(){
 
+RandomSearch::RandomSearch(int solutionSize)
+{
+	fitnessMax = 1000;
+	nbEval = 100;
+	s.resize(solutionSize);
 }
 
-void RandomSearch::run(Solution s) {
-    Solution sBest;
-    Solution sprime = s ;
-
-    std::cout<<"test : "<< sprime.to_string()<<std::endl;
+Solution RandomSearch::getSolution()
+{
+	return s;
 }
+
+void RandomSearch::run()
+{
+	EvalCC eval;
+	int bestFoundFitness = 10000;
+	Solution sTmp; 
+	sTmp.resize(s.size());
+	std::cout << sTmp.to_string() << std::endl;
+
+	for( int i = 0; i< nbEval; i++)
+	{
+		std::cout << "Eval numéro " << i << std::endl; 
+		randomizeSolution(sTmp);
+		std::cout << "Retour dans run:  "  << std::endl;
+		std::cout << sTmp.to_string() << std::endl;
+		std::cout << "Juste avant eval de la solution suivante:  "  << std::endl; 
+		std::cout << sTmp.to_string() << std::endl;	
+		eval(sTmp);
+		std::cout << "Passé dans eval " << std::endl; 
+		if(sTmp.fitness() < bestFoundFitness)
+		{
+			std::cout << "NOUVEAU BEST TROUVE: " << sTmp.fitness() << std::endl; 
+			s = sTmp;
+			bestFitness = sTmp.fitness();
+		}
+		
+	}
+	
+}
+
+void RandomSearch::randomizeSolution(Solution &sol)
+{
+	std::cout << "Entrée dans random, solution de size " << sol.size()  << std::endl; 
+	std::cout << sol.to_string() << std::endl;
+	int tmp;
+	for(unsigned int i = 0; i < sol.size(); i++)
+	{
+		tmp = rand()%101;
+		sol[i] = tmp;
+  	}
+	std::cout << "Sortie de la boucle, nouvelle solution: " << sol.size()  << std::endl; 
+	std::cout << sol.to_string() << std::endl;
+}
+

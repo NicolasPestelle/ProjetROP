@@ -1,41 +1,56 @@
-//
-// Created by cspecq1 on 15/01/18.
-//
+#include <stdio.h>
+#include <iostream>
+#include <stdlib.h>
+#include <evalCC.hpp>
+#include <RandomSearch.hpp>
+#include <time.h>
 
-#include "RandomSearch.hpp"
 
 
-RandomSearch::RandomSearch(){
-  nbEval = 10;
-  fitnessMax = 255;
+RandomSearch::RandomSearch(int solutionSize)
+{
+	fitnessMax = 1000;
+	nbEval = 100;
+	s.resize(solutionSize);
 }
 
-void RandomSearch::randomSolution(Solution s)
+Solution RandomSearch::getSolution()
+{
+	return s;
+}
+
+void RandomSearch::run()
+{
+	EvalCC eval;
+	int bestFoundFitness = 10000;
+	Solution sTmp; 
+	sTmp.resize(s.size());
+	std::cout << sTmp.to_string() << std::endl;
+
+	for( int i = 0; i< nbEval; i++)
+	{
+		std::cout << "Eval numéro " << i << std::endl; 
+		randomizeSolution(sTmp);
+		eval(sTmp);
+		if(sTmp.fitness() < bestFoundFitness)
+		{
+			std::cout << "NOUVEAU BEST TROUVE: " << sTmp.fitness() << std::endl; 
+			s = sTmp;
+			bestFoundFitness = sTmp.fitness();
+		}
+		
+	}
+	
+}
+
+void RandomSearch::randomizeSolution(Solution &sol)
 {
   srand(time(NULL));
-  for(unsigned i =0; i< s.size();i++){
-    int r = rand()%101;
-    s[i] = r;
-  }
-  
+ 
+  for(unsigned i = 0; i < sol.size(); i++)
+    {
+      int tmp = rand()%101;
+      sol[i] = tmp;
+    }
 }
 
-Solution RandomSearch::run(Solution s) {
-
-  randomSolution(s);
-  
-  EvalCC eval; 
-  Solution sBest;
-  Solution sprime = s ;
-
-  for(int i =0; i<nbEval; i++){
-   randomSolution(sprime);
-    eval(sprime);
-    if(sprime > sBest)
-      {
-	sBest = sprime;
-      }
-  }
-
-  return sBest;    
-}

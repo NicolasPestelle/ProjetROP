@@ -31,96 +31,50 @@
 #include <chrono>
 #include <fstream>
 #include <iostream>
+#include <time.h>
 #include "RandomSearch.hpp"
 
 
 using namespace cc;
 using namespace artis::common;
 
-/*
-class View : public cc::View
-{
-public:
-    View()
-    {
-        selector("Stack:height", { RootGraphManager::CC,
-                    SubGraphManager::STACK, cc::View::ALL, Stack::HEIGHT });
-        selector("Crane:moveNumber", { RootGraphManager::CC,
-                    SubGraphManager::CRANE, Crane::MOVE_NUMBER });
-        selector("Crane:slabNumber", { RootGraphManager::CC,
-                    SubGraphManager::CRANE, Crane::SLAB_NUMBER });
-    }
-};
-
-void stat(const artis::common::RootCoordinator < DoubleTime,
-          artis::pdevs::Coordinator < DoubleTime, RootGraphManager,
-          GlobalParameters > >& rc)
-{
-    unsigned int sum = 0;
-    unsigned int sum_N = 0;
-
-    for (unsigned int i = 1; i <= 5; ++i) {
-        const ::View::Values& values = rc.observer().view("CC").get(
-            "Stack:height", (boost::format(":root:CC:stack_%1%:height") %
-                             i).str());
-
-        for (::View::Values::const_iterator it = values.begin();
-             it != values.end(); ++it) {
-            int height;
-
-            it->second(height);
-            sum += height;
-        }
-        sum_N += values.size();
-    }
-    std::cout << "Average of stack height = " << ((double)sum / sum_N)
-              << std::endl;
-
-    {
-        const ::View::Values& values = rc.observer().view("CC").get(
-            "Crane:moveNumber");
-        int move_number;
-
-        values.back().second(move_number);
-        std::cout << "Crane move number: " << move_number << std::endl;
-    }
-    {
-        const ::View::Values& values = rc.observer().view("CC").get(
-            "Crane:slabNumber");
-        int slab_number;
-
-        values.back().second(slab_number);
-        std::cout << "Total slab number: " << slab_number << std::endl;
-    }
-}
-*/
 
 int main()
-{
+{ 
+    srand(time(NULL));
 	// constants related to the dimension of the optimization problem 
     const unsigned int n_stack = 5;
     const unsigned int n_destination = 8;
     const unsigned int solution_size = n_destination + n_stack * n_destination * (n_destination - 1);
 
     // evaluation function from the Continuous Casting simulator
-    EvalCC eval;
+    	/*EvalCC eval;
+	Solution stest;
+	stest.resize(solution_size);
+	eval(stest);
+	std::cout << "Reussi" << std::endl;*/
+	
    
+	RandomSearch rs(solution_size);
+	rs.run();
 
+	Solution result; 
+	result = rs.getSolution();
+
+	std::cout << result.to_string() << std::endl;
     // Declaration of one solution of the optimization problem
-    Solution s ;
+
 
     // solution for random selection: all stacks have the same preference 1
-    s.resize(solution_size,1);
+    //s.resize(solution_size,1);
 
-    RandomSearch rs;
-    // rs.run(s);
-
+    
     // evaluation of the solution
-    eval(s);
+    //eval(s);
 
 
     // print the result
-    std::cout << s.to_string() << std::endl;
+    //std::cout << s.to_string() << std::endl;
     
     /*
 

@@ -5,6 +5,8 @@
   #include <vector>
   #include <string>
   #include <sstream>
+  #include <stdlib.h>
+  #include<time.h>
 
   /**
      Classe pour représenter une solution
@@ -19,6 +21,8 @@
     Solution(const Solution & _s) : std::vector<unsigned int>(_s) {
       _fitness = _s.fitness();
     }
+
+	
 
     Solution& operator=(const Solution & _s) {
       this->resize(_s.size());
@@ -43,6 +47,25 @@
     int fitness() const {
       return _fitness;
     }
+
+	int get_oldValue(){
+	return _oldValue;
+	}
+	int get_oldRank(){
+	return _oldRank;
+	}
+
+    void neighborSolution(){
+	srand(time(NULL));
+	int indiceAlea =rand()%this->size();
+	_oldValue = this->operator[](indiceAlea);
+	_oldRank = indiceAlea;
+	this->operator[](indiceAlea) = rand()%101;
+    }
+
+    void revertNeighbor(){
+	this->operator[](_oldRank) = _oldValue;
+}
 
     /**
      * print the solution
@@ -71,6 +94,8 @@
   private:
     // quality of the solution
     int _fitness;
+    int _oldValue;
+    int _oldRank;
   };
 
   /*

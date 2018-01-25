@@ -6,12 +6,16 @@
 #define RANDOMSEARCH_HPP
 
 #include "search.hpp"
+#include <evalCC.hpp>
 
 class RandomSearch : public search{
-
+private:
+   int nbEval;
+   double fitnessMax;
 public:
-    RandomSearch();
-    void run(Solution s);
+  RandomSearch();
+  Solution run(Solution s);
+  void randomSolution(Solution s);
 };
 
 

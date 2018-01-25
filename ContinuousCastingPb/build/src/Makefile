@@ -160,6 +160,30 @@ RandomSearch.cpp.s:
 	cd /etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/build && $(MAKE) -f src/CMakeFiles/cc-simulator-main.dir/build.make src/CMakeFiles/cc-simulator-main.dir/RandomSearch.cpp.s
 .PHONY : RandomSearch.cpp.s
 
+RandomWalk.o: RandomWalk.cpp.o
+.PHONY : RandomWalk.o
+
+# target to build an object file
+RandomWalk.cpp.o:
+	cd /etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/build && $(MAKE) -f src/CMakeFiles/cc-simulator-main.dir/build.make src/CMakeFiles/cc-simulator-main.dir/RandomWalk.cpp.o
+.PHONY : RandomWalk.cpp.o
+
+RandomWalk.i: RandomWalk.cpp.i
+.PHONY : RandomWalk.i
+
+# target to preprocess a source file
+RandomWalk.cpp.i:
+	cd /etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/build && $(MAKE) -f src/CMakeFiles/cc-simulator-main.dir/build.make src/CMakeFiles/cc-simulator-main.dir/RandomWalk.cpp.i
+.PHONY : RandomWalk.cpp.i
+
+RandomWalk.s: RandomWalk.cpp.s
+.PHONY : RandomWalk.s
+
+# target to generate assembly for a file
+RandomWalk.cpp.s:
+	cd /etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/build && $(MAKE) -f src/CMakeFiles/cc-simulator-main.dir/build.make src/CMakeFiles/cc-simulator-main.dir/RandomWalk.cpp.s
+.PHONY : RandomWalk.cpp.s
+
 cluster.o: cluster.cpp.o
 .PHONY : cluster.o
 
@@ -279,30 +303,6 @@ generator.s: generator.cpp.s
 generator.cpp.s:
 	cd /etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/build && $(MAKE) -f src/CMakeFiles/cc-simulator-main.dir/build.make src/CMakeFiles/cc-simulator-main.dir/generator.cpp.s
 .PHONY : generator.cpp.s
-
-hillCLimberBest.o: hillCLimberBest.cpp.o
-.PHONY : hillCLimberBest.o
-
-# target to build an object file
-hillCLimberBest.cpp.o:
-	cd /etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/build && $(MAKE) -f src/CMakeFiles/cc-simulator-main.dir/build.make src/CMakeFiles/cc-simulator-main.dir/hillCLimberBest.cpp.o
-.PHONY : hillCLimberBest.cpp.o
-
-hillCLimberBest.i: hillCLimberBest.cpp.i
-.PHONY : hillCLimberBest.i
-
-# target to preprocess a source file
-hillCLimberBest.cpp.i:
-	cd /etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/build && $(MAKE) -f src/CMakeFiles/cc-simulator-main.dir/build.make src/CMakeFiles/cc-simulator-main.dir/hillCLimberBest.cpp.i
-.PHONY : hillCLimberBest.cpp.i
-
-hillCLimberBest.s: hillCLimberBest.cpp.s
-.PHONY : hillCLimberBest.s
-
-# target to generate assembly for a file
-hillCLimberBest.cpp.s:
-	cd /etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/build && $(MAKE) -f src/CMakeFiles/cc-simulator-main.dir/build.make src/CMakeFiles/cc-simulator-main.dir/hillCLimberBest.cpp.s
-.PHONY : hillCLimberBest.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -462,6 +462,9 @@ help:
 	@echo "... RandomSearch.o"
 	@echo "... RandomSearch.i"
 	@echo "... RandomSearch.s"
+	@echo "... RandomWalk.o"
+	@echo "... RandomWalk.i"
+	@echo "... RandomWalk.s"
 	@echo "... cluster.o"
 	@echo "... cluster.i"
 	@echo "... cluster.s"
@@ -477,9 +480,6 @@ help:
 	@echo "... generator.o"
 	@echo "... generator.i"
 	@echo "... generator.s"
-	@echo "... hillCLimberBest.o"
-	@echo "... hillCLimberBest.i"
-	@echo "... hillCLimberBest.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

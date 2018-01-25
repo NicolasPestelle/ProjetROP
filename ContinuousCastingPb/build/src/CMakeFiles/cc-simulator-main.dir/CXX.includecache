@@ -18,16 +18,6 @@ models.hpp
 stack.hpp
 -
 
-../src/evalCC.hpp
-graph_manager.hpp
--
-models.hpp
--
-artis-star/common/RootCoordinator.hpp
--
-solution.hpp
--
-
 ../src/gantry_crane.hpp
 models.hpp
 -
@@ -92,6 +82,10 @@ vector
 string
 -
 sstream
+-
+stdlib.h
+-
+time.h
 -
 
 ../src/stack.hpp
@@ -362,13 +356,29 @@ artis-star/common/utils/Trace.hpp
 cassert
 -
 
-/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/src/RandomSearch.hpp
-search.hpp
-/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/src/search.hpp
-evalCC.hpp
--
+/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/src/LocalSearch.hpp
+solution.hpp
+/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/src/solution.hpp
 
-/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/src/main.cpp
+/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/src/RandomWalk.cpp
+stdio.h
+-
+iostream
+-
+stdlib.h
+-
+time.h
+-
+evalCC.hpp
+/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/src/evalCC.hpp
+RandomWalk.hpp
+/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/src/RandomWalk.hpp
+
+/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/src/RandomWalk.hpp
+LocalSearch.hpp
+/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/src/LocalSearch.hpp
+
+/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/src/evalCC.hpp
 graph_manager.hpp
 -
 models.hpp
@@ -377,18 +387,4 @@ artis-star/common/RootCoordinator.hpp
 -
 solution.hpp
 -
-evalCC.hpp
--
-chrono
--
-fstream
--
-iostream
--
-RandomSearch.hpp
-/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/src/RandomSearch.hpp
-
-/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/src/search.hpp
-solution.hpp
-/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/src/solution.hpp
 

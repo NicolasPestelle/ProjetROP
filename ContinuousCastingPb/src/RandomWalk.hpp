@@ -1,19 +1,20 @@
-#ifndef RANDOMSEARCH_HPP
-#define RANDOMSEARCH_HPP
+#ifndef RANDOMWALK_HPP
+#define RANDOMWALK_HPP
 
 #include "LocalSearch.hpp"
 
 
-class RandomSearch : public LocalSearch {
+class RandomWalk : public LocalSearch {
 	protected:
 	//	int nbEval;
 	//	double bestFitness;
 	//	Solution s;
 	//	double fitnessMax;
 	public:
-		RandomSearch(int solutionSize);
+		RandomWalk(int solutionSize);
 		void run();
 		void randomizeSolution(Solution&);
+		void getNeighborSolution(Solution&);
 		Solution getSolution();
 
 		
