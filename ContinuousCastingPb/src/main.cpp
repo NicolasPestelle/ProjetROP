@@ -34,6 +34,7 @@
 #include <time.h>
 #include <RandomSearch.hpp>
 #include <RandomWalk.hpp>
+#include <HillClimberFirst.hpp>
 
 
 using namespace cc;
@@ -48,7 +49,7 @@ int main()
     const unsigned int n_destination = 8;
     const unsigned int solution_size = n_destination + n_stack * n_destination * (n_destination - 1);
 
-	std::cout << "RANDOM SEARCH" << std::endl;
+	/*std::cout << "RANDOM SEARCH" << std::endl;
    
 	RandomSearch rs(solution_size);
 	rs.run();
@@ -68,7 +69,19 @@ int main()
 	result2 = rw.getSolution();
 
 	std::cout << "MEILLEURE SOLUTION TROUVEE:" << std::endl;
-	std::cout << result2.to_string() << std::endl;
+	std::cout << result2.to_string() << std::endl;*/
+
+
+	std::cout << "HILL CLIMBER FIRST" << std::endl;
+   
+	HillClimberFirst hcf(solution_size);
+	hcf.run();
+
+	Solution result1; 
+	result1 = hcf.getSolution();
+
+	std::cout << "MEILLEURE SOLUTION TROUVEE:" << std::endl;
+	std::cout << result1.to_string() << std::endl;
 
 
     return 0;

@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+../src/HillClimberFirst.hpp
+LocalSearch.hpp
+../src/LocalSearch.hpp
+
 ../src/LocalSearch.hpp
 solution.hpp
 ../src/solution.hpp
@@ -378,6 +382,24 @@ artis-star/common/utils/Trace.hpp
 cassert
 -
 
+/home/corentin/Bureau/ProjetROP/ContinuousCastingPb/src/HillClimberFirst.cpp
+stdio.h
+-
+iostream
+-
+stdlib.h
+-
+time.h
+-
+evalCC.hpp
+/home/corentin/Bureau/ProjetROP/ContinuousCastingPb/src/evalCC.hpp
+HillClimberFirst.hpp
+/home/corentin/Bureau/ProjetROP/ContinuousCastingPb/src/HillClimberFirst.hpp
+
+/home/corentin/Bureau/ProjetROP/ContinuousCastingPb/src/HillClimberFirst.hpp
+LocalSearch.hpp
+/home/corentin/Bureau/ProjetROP/ContinuousCastingPb/src/LocalSearch.hpp
+
 /home/corentin/Bureau/ProjetROP/ContinuousCastingPb/src/LocalSearch.hpp
 solution.hpp
 /home/corentin/Bureau/ProjetROP/ContinuousCastingPb/src/solution.hpp
@@ -478,6 +500,8 @@ time.h
 RandomSearch.hpp
 -
 RandomWalk.hpp
+-
+HillClimberFirst.hpp
 -
 
 /home/corentin/Bureau/ProjetROP/ContinuousCastingPb/src/models.cpp

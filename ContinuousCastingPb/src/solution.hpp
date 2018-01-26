@@ -63,6 +63,13 @@
 	this->operator[](indiceAlea) = rand()%101;
     }
 
+    void targetedNeighborSolution(int i){
+	srand(time(NULL));
+	_oldValue = this->operator[](i);
+	_oldRank = i;
+	this->operator[](i) = rand()%101;
+    }
+
     void revertNeighbor(){
 	this->operator[](_oldRank) = _oldValue;
 }

@@ -147,6 +147,33 @@ cc-simulator-main/fast:
 	cd /home/corentin/Bureau/ProjetROP/ContinuousCastingPb/build && $(MAKE) -f src/CMakeFiles/cc-simulator-main.dir/build.make src/CMakeFiles/cc-simulator-main.dir/build
 .PHONY : cc-simulator-main/fast
 
+HillClimberFirst.o: HillClimberFirst.cpp.o
+
+.PHONY : HillClimberFirst.o
+
+# target to build an object file
+HillClimberFirst.cpp.o:
+	cd /home/corentin/Bureau/ProjetROP/ContinuousCastingPb/build && $(MAKE) -f src/CMakeFiles/cc-simulator-main.dir/build.make src/CMakeFiles/cc-simulator-main.dir/HillClimberFirst.cpp.o
+.PHONY : HillClimberFirst.cpp.o
+
+HillClimberFirst.i: HillClimberFirst.cpp.i
+
+.PHONY : HillClimberFirst.i
+
+# target to preprocess a source file
+HillClimberFirst.cpp.i:
+	cd /home/corentin/Bureau/ProjetROP/ContinuousCastingPb/build && $(MAKE) -f src/CMakeFiles/cc-simulator-main.dir/build.make src/CMakeFiles/cc-simulator-main.dir/HillClimberFirst.cpp.i
+.PHONY : HillClimberFirst.cpp.i
+
+HillClimberFirst.s: HillClimberFirst.cpp.s
+
+.PHONY : HillClimberFirst.s
+
+# target to generate assembly for a file
+HillClimberFirst.cpp.s:
+	cd /home/corentin/Bureau/ProjetROP/ContinuousCastingPb/build && $(MAKE) -f src/CMakeFiles/cc-simulator-main.dir/build.make src/CMakeFiles/cc-simulator-main.dir/HillClimberFirst.cpp.s
+.PHONY : HillClimberFirst.cpp.s
+
 RandomSearch.o: RandomSearch.cpp.o
 
 .PHONY : RandomSearch.o
@@ -509,6 +536,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... package_source"
+	@echo "... HillClimberFirst.o"
+	@echo "... HillClimberFirst.i"
+	@echo "... HillClimberFirst.s"
 	@echo "... RandomSearch.o"
 	@echo "... RandomSearch.i"
 	@echo "... RandomSearch.s"
