@@ -6,10 +6,7 @@
 
 class RandomWalk : public LocalSearch {
 	protected:
-	//	int nbEval;
-	//	double bestFitness;
-	//	Solution s;
-	//	double fitnessMax;
+
 	public:
 		RandomWalk(int solutionSize);
 		void run();

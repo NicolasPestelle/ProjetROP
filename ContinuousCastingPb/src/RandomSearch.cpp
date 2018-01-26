@@ -25,7 +25,6 @@ void RandomSearch::run()
 	int bestFoundFitness = 10000;
 	Solution sTmp; 
 	sTmp.resize(s.size());
-	std::cout << sTmp.to_string() << std::endl;
 
 	for( int i = 0; i< nbEval; i++)
 	{

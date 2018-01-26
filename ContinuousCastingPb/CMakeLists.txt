@@ -37,8 +37,8 @@ INCLUDE(CMakeDetermineCCompiler)
 #FIND_PACKAGE(PkgConfig REQUIRED)
 #PKG_CHECK_MODULES(ARTIS REQUIRED artis-star-1.0)
 
-SET(ARTIS_INCLUDE_DIRS "/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/usr/local/include/artis-star-1.0/")
-SET(ARTIS_LIBRAIRIES "/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/usr/local/bin/artis-star-1.0")
+SET(ARTIS_INCLUDE_DIRS "/home/corentin/Bureau/ProjetROP/ContinuousCastingPb/usr/local/include/artis-star-1.0/")
+SET(ARTIS_LIBRAIRIES "/home/corentin/Bureau/ProjetROP/ContinuousCastingPb/usr/local/bin/artis-star-1.0")
 
 
 include_directories(${ARTIS_INCLUDE_DIRS})

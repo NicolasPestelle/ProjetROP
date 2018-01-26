@@ -48,23 +48,28 @@ int main()
     const unsigned int n_destination = 8;
     const unsigned int solution_size = n_destination + n_stack * n_destination * (n_destination - 1);
 
-	
+	std::cout << "RANDOM SEARCH" << std::endl;
    
-	/*RandomSearch rs(solution_size);
+	RandomSearch rs(solution_size);
 	rs.run();
 
-	Solution result; 
-	result = rs.getSolution();*/
+	Solution result1; 
+	result1 = rs.getSolution();
 
+	std::cout << "MEILLEURE SOLUTION TROUVEE:" << std::endl;
+	std::cout << result1.to_string() << std::endl;
+	
+
+	std::cout << "RANDOM WALK" << std::endl;
 	RandomWalk rw(solution_size);
 	rw.run();
 
-	//Solution result; 
-	//result = rw.getSolution();
+	Solution result2; 
+	result2 = rw.getSolution();
 
-	
+	std::cout << "MEILLEURE SOLUTION TROUVEE:" << std::endl;
+	std::cout << result2.to_string() << std::endl;
 
-//	std::cout << result.to_string() << std::endl;
 
     return 0;
 }

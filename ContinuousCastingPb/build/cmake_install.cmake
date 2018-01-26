@@ -1,4 +1,4 @@
-# Install script for directory: /etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb
+# Install script for directory: /home/corentin/Bureau/ProjetROP/ContinuousCastingPb
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/build/src/cmake_install.cmake")
+  include("/home/corentin/Bureau/ProjetROP/ContinuousCastingPb/build/src/cmake_install.cmake")
 
 endif()
 
@@ -44,7 +44,7 @@ else()
   set(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
 endif()
 
-file(WRITE "/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/build/${CMAKE_INSTALL_MANIFEST}" "")
-foreach(file ${CMAKE_INSTALL_MANIFEST_FILES})
-  file(APPEND "/etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
-endforeach()
+string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
+       "${CMAKE_INSTALL_MANIFEST_FILES}")
+file(WRITE "/home/corentin/Bureau/ProjetROP/ContinuousCastingPb/build/${CMAKE_INSTALL_MANIFEST}"
+     "${CMAKE_INSTALL_MANIFEST_CONTENT}")

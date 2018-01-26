@@ -1,4 +1,4 @@
-# Install script for directory: /etudiants/cspecq1/Documents/ProjetROP/ContinuousCastingPb/src
+# Install script for directory: /home/corentin/Bureau/ProjetROP/ContinuousCastingPb/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
