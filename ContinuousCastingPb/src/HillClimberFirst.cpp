@@ -10,12 +10,13 @@
 HillClimberFirst::HillClimberFirst(int solutionSize)
 {
 	fitnessMax = 1000;
-	nbEval = 2; // JUSTE POUR LE TEST SUR MACHINE LENTE, A MODIFIER
+	nbEval = 500; // JUSTE POUR LE TEST SUR MACHINE LENTE, A MODIFIER
 	s.resize(solutionSize);
 }
 
 HillClimberFirst::HillClimberFirst(Solution sol)
 {
+	s.resize(sol.size());
 	fitnessMax = 1000;
 	nbEval = 2; // JUSTE POUR LE TEST SUR MACHINE LENTE, A MODIFIER
 	s = sol;
@@ -38,6 +39,11 @@ void HillClimberFirst::randomizeSolution(Solution &sol)
 Solution HillClimberFirst::getSolution()
 {
 	return s;
+}
+
+void HillClimberFirst::set_solution(Solution sol)
+{
+	s = sol;
 }
 
 

@@ -167,6 +167,12 @@ src/CMakeFiles/cc-simulator-main.dir/RandomWalk.cpp.o: ../src/RandomWalk.cpp
 src/CMakeFiles/cc-simulator-main.dir/RandomWalk.cpp.o: ../src/RandomWalk.hpp
 src/CMakeFiles/cc-simulator-main.dir/RandomWalk.cpp.o: ../src/evalCC.hpp
 
+src/CMakeFiles/cc-simulator-main.dir/SimulatedAnnealing.cpp.o: ../src/HillClimberFirst.hpp
+src/CMakeFiles/cc-simulator-main.dir/SimulatedAnnealing.cpp.o: ../src/LocalSearch.hpp
+src/CMakeFiles/cc-simulator-main.dir/SimulatedAnnealing.cpp.o: ../src/SimulatedAnnealing.cpp
+src/CMakeFiles/cc-simulator-main.dir/SimulatedAnnealing.cpp.o: ../src/SimulatedAnnealing.hpp
+src/CMakeFiles/cc-simulator-main.dir/SimulatedAnnealing.cpp.o: ../src/solution.hpp
+
 src/CMakeFiles/cc-simulator-main.dir/cluster.cpp.o: ../src/cluster.hpp
 src/CMakeFiles/cc-simulator-main.dir/cluster.cpp.o: ../src/models.hpp
 src/CMakeFiles/cc-simulator-main.dir/cluster.cpp.o: ../src/stack.hpp

@@ -13,6 +13,7 @@ class HillClimberFirst : public LocalSearch {
 		void run();
 		void randomizeSolution(Solution&);
 		Solution getSolution();
+		void set_solution(Solution sol);
 
 		
 };

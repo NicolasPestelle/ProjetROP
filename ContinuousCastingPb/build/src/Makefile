@@ -282,6 +282,33 @@ RandomWalk.cpp.s:
 	cd /home/corentin/Bureau/ProjetROP/ContinuousCastingPb/build && $(MAKE) -f src/CMakeFiles/cc-simulator-main.dir/build.make src/CMakeFiles/cc-simulator-main.dir/RandomWalk.cpp.s
 .PHONY : RandomWalk.cpp.s
 
+SimulatedAnnealing.o: SimulatedAnnealing.cpp.o
+
+.PHONY : SimulatedAnnealing.o
+
+# target to build an object file
+SimulatedAnnealing.cpp.o:
+	cd /home/corentin/Bureau/ProjetROP/ContinuousCastingPb/build && $(MAKE) -f src/CMakeFiles/cc-simulator-main.dir/build.make src/CMakeFiles/cc-simulator-main.dir/SimulatedAnnealing.cpp.o
+.PHONY : SimulatedAnnealing.cpp.o
+
+SimulatedAnnealing.i: SimulatedAnnealing.cpp.i
+
+.PHONY : SimulatedAnnealing.i
+
+# target to preprocess a source file
+SimulatedAnnealing.cpp.i:
+	cd /home/corentin/Bureau/ProjetROP/ContinuousCastingPb/build && $(MAKE) -f src/CMakeFiles/cc-simulator-main.dir/build.make src/CMakeFiles/cc-simulator-main.dir/SimulatedAnnealing.cpp.i
+.PHONY : SimulatedAnnealing.cpp.i
+
+SimulatedAnnealing.s: SimulatedAnnealing.cpp.s
+
+.PHONY : SimulatedAnnealing.s
+
+# target to generate assembly for a file
+SimulatedAnnealing.cpp.s:
+	cd /home/corentin/Bureau/ProjetROP/ContinuousCastingPb/build && $(MAKE) -f src/CMakeFiles/cc-simulator-main.dir/build.make src/CMakeFiles/cc-simulator-main.dir/SimulatedAnnealing.cpp.s
+.PHONY : SimulatedAnnealing.cpp.s
+
 cluster.o: cluster.cpp.o
 
 .PHONY : cluster.o
@@ -605,6 +632,9 @@ help:
 	@echo "... RandomWalk.o"
 	@echo "... RandomWalk.i"
 	@echo "... RandomWalk.s"
+	@echo "... SimulatedAnnealing.o"
+	@echo "... SimulatedAnnealing.i"
+	@echo "... SimulatedAnnealing.s"
 	@echo "... cluster.o"
 	@echo "... cluster.i"
 	@echo "... cluster.s"

@@ -10,7 +10,7 @@
 HillClimberBest::HillClimberBest(int solutionSize)
 {
 	fitnessMax = 1000;
-	nbEval = 2; // JUSTE POUR LE TEST SUR MACHINE LENTE, A MODIFIER
+	nbEval = 500; // JUSTE POUR LE TEST SUR MACHINE LENTE, A MODIFIER
 	s.resize(solutionSize);
 }
 
