@@ -47,6 +47,9 @@ void IteratedLocalSearch::run()
 	std::cout << "ENTREE DANS LE FOR, SOLUCE RANDOM" << std::endl;
 	for(int i = 0; i< nbEval; i++)
 	{
+		std::cout << "ITERATION DE ILS NUMERO" << i << std::endl;
+		std::cout << "-------------------------------------------"  << std::endl;
+		std::cout << "-------------------------------------------"  << std::endl;
 		//randomizeSolution(sTmp);
 		HillClimberFirst hcf(s.size());
 		hcf.run();

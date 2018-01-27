@@ -83,7 +83,7 @@ int main()
 	result1 = hcf.getSolution();
 
 	std::cout << "MEILLEURE SOLUTION TROUVEE:" << std::endl;
-	std::cout << result1.to_string() << std::endl;
+	std::cout << result1.to_string() << std::endl;*/
 
 	std::cout << "HILL CLIMBER BEST" << std::endl;
    
@@ -94,9 +94,9 @@ int main()
 	result1 = hcb.getSolution();
 
 	std::cout << "MEILLEURE SOLUTION TROUVEE:" << std::endl;
-	std::cout << result1.to_string() << std::endl;*/
+	std::cout << result1.to_string() << std::endl;
 
-	std::cout << "ITERATED LOCAL SEARCH" << std::endl;
+	/*std::cout << "ITERATED LOCAL SEARCH" << std::endl;
    
 	IteratedLocalSearch ils(solution_size);
 	ils.run();
@@ -105,7 +105,7 @@ int main()
 	result1 = ils.getSolution();
 
 	std::cout << "MEILLEURE SOLUTION TROUVEE:" << std::endl;
-	std::cout << result1.to_string() << std::endl;
+	std::cout << result1.to_string() << std::endl;*/
 
 
 

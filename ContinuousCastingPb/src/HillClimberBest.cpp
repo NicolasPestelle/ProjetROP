@@ -10,7 +10,7 @@
 HillClimberBest::HillClimberBest(int solutionSize)
 {
 	fitnessMax = 1000;
-	nbEval = 1; // JUSTE POUR LE TEST SUR MACHINE LENTE, A MODIFIER
+	nbEval = 2; // JUSTE POUR LE TEST SUR MACHINE LENTE, A MODIFIER
 	s.resize(solutionSize);
 }
 
@@ -56,6 +56,9 @@ void HillClimberBest::run()
 		std::cout << "Eval numéro " << cptIterations << std::endl; 
 		bestNeighborRank = -1;
 		affectedValue = -1;
+		int bestFoundFitness = sTmp.fitness();
+		std::cout << "LA MEILLEUR FITNESS TROUVEE POUR LE MOMENT" << bestFoundFitness << std::endl;
+		std::cout << sTmp.to_string() << std::endl;
 		for(unsigned j = 0; j < sTmp.size(); j++)
 		{
 			std::cout << "Test du rang: " << j << std::endl; 
@@ -67,10 +70,8 @@ void HillClimberBest::run()
 				bestFoundFitness = sTmp.fitness();
 				bestNeighborRank = j;
 				affectedValue = sTmp[j];
-				std::cout << "TROUVE MIEUX, VOISIN NUMERO : " << j << std::endl;
-				std::cout << "FITNESS TROUVEE : " << sTmp.fitness() << std::endl;
-				std::cout << "AFFECTED VALUE : " << affectedValue << std::endl;
-				std::cout << sTmp.to_string() << std::endl;
+				std::cout << "TROUVE MIEUX, VOISIN NUMERO : " << j << " FITNESS TROUVEE : " << sTmp.fitness() << std::endl;
+				//std::cout << sTmp.to_string() << std::endl;
 			
 				
 			}
@@ -78,8 +79,6 @@ void HillClimberBest::run()
 
 		}
 		cptIterations++;
-		std::cout << " Rang modifié : " << bestNeighborRank  << std::endl; 
-		std::cout << " Valeur affectée : " << affectedValue  << std::endl; 
 	
 		
 		if(bestNeighborRank == -1) // Optimum local
@@ -91,10 +90,8 @@ void HillClimberBest::run()
 		{
 			std::cout << "toto" << std::endl;
 			sTmp[bestNeighborRank] = affectedValue;
-			eval(sTmp);
-			std::cout << sTmp.to_string() << std::endl;
-			eval(sTmp);
-			std::cout << sTmp.to_string() << std::endl;
+			sTmp.set_fitness(bestFoundFitness);
+			//std::cout << sTmp.to_string() << std::endl;
 			s = sTmp;
 		}
 		if(cptIterations == nbEval) // Critère d'arret

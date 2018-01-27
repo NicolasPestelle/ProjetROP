@@ -48,6 +48,11 @@
       return _fitness;
     }
 
+	void set_fitness(int fitness)
+	{
+		_fitness = fitness; // Used to solve the evaluation problem
+	}
+
 	int get_oldValue(){
 	return _oldValue;
 	}
