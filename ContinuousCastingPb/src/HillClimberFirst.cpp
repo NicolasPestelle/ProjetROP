@@ -65,7 +65,7 @@ void HillClimberFirst::run()
 	while(!stop)
 	{
 		std::cout << "Eval numéro " << cptIterations << std::endl; 
-
+		foundBest = false;
 		for(unsigned j = 0; j < sTmp.size(); j++)
 		{
 			sTmp.targetedNeighborSolution(j);
