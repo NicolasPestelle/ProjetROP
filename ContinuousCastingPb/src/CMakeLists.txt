@@ -16,6 +16,6 @@ ADD_EXECUTABLE(cc-simulator-main evalCC.hpp evalCC.cpp solution.hpp cluster.hpp 
   gantry_crane.hpp gantry_crane.cpp generator.hpp generator.cpp
   graph_manager.hpp models.hpp models.cpp main.cpp run_out_table.hpp
   run_out_table.cpp stack.hpp stack.cpp stock.hpp stock.cpp utils/rand.cpp
-  utils/rand.hpp  LocalSearch.hpp RandomSearch.cpp RandomWalk.cpp HillClimberFirst.cpp )
+  utils/rand.hpp  LocalSearch.hpp RandomSearch.cpp RandomWalk.cpp HillClimberFirst.cpp HillClimberBest.cpp )
 
 TARGET_LINK_LIBRARIES(cc-simulator-main pthread)
