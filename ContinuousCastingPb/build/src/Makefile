@@ -201,6 +201,33 @@ HillClimberFirst.cpp.s:
 	cd /home/corentin/Bureau/ProjetROP/ContinuousCastingPb/build && $(MAKE) -f src/CMakeFiles/cc-simulator-main.dir/build.make src/CMakeFiles/cc-simulator-main.dir/HillClimberFirst.cpp.s
 .PHONY : HillClimberFirst.cpp.s
 
+IteratedLocalSearch.o: IteratedLocalSearch.cpp.o
+
+.PHONY : IteratedLocalSearch.o
+
+# target to build an object file
+IteratedLocalSearch.cpp.o:
+	cd /home/corentin/Bureau/ProjetROP/ContinuousCastingPb/build && $(MAKE) -f src/CMakeFiles/cc-simulator-main.dir/build.make src/CMakeFiles/cc-simulator-main.dir/IteratedLocalSearch.cpp.o
+.PHONY : IteratedLocalSearch.cpp.o
+
+IteratedLocalSearch.i: IteratedLocalSearch.cpp.i
+
+.PHONY : IteratedLocalSearch.i
+
+# target to preprocess a source file
+IteratedLocalSearch.cpp.i:
+	cd /home/corentin/Bureau/ProjetROP/ContinuousCastingPb/build && $(MAKE) -f src/CMakeFiles/cc-simulator-main.dir/build.make src/CMakeFiles/cc-simulator-main.dir/IteratedLocalSearch.cpp.i
+.PHONY : IteratedLocalSearch.cpp.i
+
+IteratedLocalSearch.s: IteratedLocalSearch.cpp.s
+
+.PHONY : IteratedLocalSearch.s
+
+# target to generate assembly for a file
+IteratedLocalSearch.cpp.s:
+	cd /home/corentin/Bureau/ProjetROP/ContinuousCastingPb/build && $(MAKE) -f src/CMakeFiles/cc-simulator-main.dir/build.make src/CMakeFiles/cc-simulator-main.dir/IteratedLocalSearch.cpp.s
+.PHONY : IteratedLocalSearch.cpp.s
+
 RandomSearch.o: RandomSearch.cpp.o
 
 .PHONY : RandomSearch.o
@@ -569,6 +596,9 @@ help:
 	@echo "... HillClimberFirst.o"
 	@echo "... HillClimberFirst.i"
 	@echo "... HillClimberFirst.s"
+	@echo "... IteratedLocalSearch.o"
+	@echo "... IteratedLocalSearch.i"
+	@echo "... IteratedLocalSearch.s"
 	@echo "... RandomSearch.o"
 	@echo "... RandomSearch.i"
 	@echo "... RandomSearch.s"

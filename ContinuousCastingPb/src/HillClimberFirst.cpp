@@ -10,8 +10,15 @@
 HillClimberFirst::HillClimberFirst(int solutionSize)
 {
 	fitnessMax = 1000;
-	nbEval = 5; // JUSTE POUR LE TEST SUR MACHINE LENTE, A MODIFIER
+	nbEval = 2; // JUSTE POUR LE TEST SUR MACHINE LENTE, A MODIFIER
 	s.resize(solutionSize);
+}
+
+HillClimberFirst::HillClimberFirst(Solution sol)
+{
+	fitnessMax = 1000;
+	nbEval = 2; // JUSTE POUR LE TEST SUR MACHINE LENTE, A MODIFIER
+	s = sol;
 }
 
 

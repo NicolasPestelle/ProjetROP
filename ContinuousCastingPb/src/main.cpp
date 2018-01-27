@@ -36,6 +36,7 @@
 #include <RandomWalk.hpp>
 #include <HillClimberFirst.hpp>
 #include <HillClimberBest.hpp>
+#include <IteratedLocalSearch.hpp>
 
 
 using namespace cc;
@@ -82,7 +83,7 @@ int main()
 	result1 = hcf.getSolution();
 
 	std::cout << "MEILLEURE SOLUTION TROUVEE:" << std::endl;
-	std::cout << result1.to_string() << std::endl;*/
+	std::cout << result1.to_string() << std::endl;
 
 	std::cout << "HILL CLIMBER BEST" << std::endl;
    
@@ -91,6 +92,17 @@ int main()
 
 	Solution result1; 
 	result1 = hcb.getSolution();
+
+	std::cout << "MEILLEURE SOLUTION TROUVEE:" << std::endl;
+	std::cout << result1.to_string() << std::endl;*/
+
+	std::cout << "ITERATED LOCAL SEARCH" << std::endl;
+   
+	IteratedLocalSearch ils(solution_size);
+	ils.run();
+
+	Solution result1; 
+	result1 = ils.getSolution();
 
 	std::cout << "MEILLEURE SOLUTION TROUVEE:" << std::endl;
 	std::cout << result1.to_string() << std::endl;

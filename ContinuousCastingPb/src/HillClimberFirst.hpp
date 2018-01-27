@@ -9,6 +9,7 @@ class HillClimberFirst : public LocalSearch {
 
 	public:
 		HillClimberFirst(int solutionSize);
+		HillClimberFirst(Solution sol);
 		void run();
 		void randomizeSolution(Solution&);
 		Solution getSolution();
